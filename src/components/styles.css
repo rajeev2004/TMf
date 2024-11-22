@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  overflow-x: hidden;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.task-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease-in-out;
+  width: 100%;
+  max-width: 100%; 
+  overflow-wrap: break-word; 
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.task-content {
+  margin-bottom: 10px;
+}
+
+.task-title,
+.task-description,
+.task-due,
+.task-created {
+  margin-bottom: 10px;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update,
+.delete {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.update {
+  background-color: #007bff;
+  color: white;
+}
+
+.update:hover {
+  background-color: #0056b3;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+.editable-task {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editable-task input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.editable-task button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.editable-task button.update {
+  background-color: #28a745;
+  color: white;
+}
+
+.editable-task button.update:hover {
+  background-color: #218838;
+}
+
+.editable-task button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.editable-task button.delete:hover {
+  background-color: #c82333;
+}
+
+@media (min-width: 1600px) {
+  .task-list {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+  }
+
+  .task-item {
+    padding: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .task-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  }
+
+  .task-item {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .task-list {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  }
+
+  .task-item {
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .task-list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+  }
+}
+@media (max-width: 500px) {
+  .task-list {
+    grid-template-columns: 1fr; 
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .task-list {
+    grid-template-columns: 1fr; 
+  }
+
+  .task-item {
+    padding: 5px;
+    font-size: 12px; 
+  }
+}
