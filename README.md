@@ -29,6 +29,7 @@ The Task Management app allows users to streamline their task management process
 - JavaScript
 - React.js
 - Node.js
+- PostgreSQL
 
 ## Demo
 
