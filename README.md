@@ -1,5 +1,7 @@
 # Task Management App
 
+This repository contains the **frontend code** for the Task Management app. The **backend code** is located in the [backend directory](https://github.com/rajeev2004/TMb).
+
 The Task Management app is a web application designed to help users manage their tasks efficiently. Users can add, edit, and delete tasks, set completion dates, and view the creation dates, providing a comprehensive tool for task organization.
 
 ## Table of Contents
