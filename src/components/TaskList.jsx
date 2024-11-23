@@ -10,7 +10,7 @@ function TaskList() {
   const [tasks, setTasks] = useState([]); 
   const [newTask, setNewTask] = useState({ title: '', description: '', due_date: '' });
   const [editableTask, setEditableTask] = useState(null);
-  const backendURL = "https://task-management-backend-pink.vercel.app";
+  const backendURL = "https://tmb-uwit.onrender.com";
   async function getTasks() {
     try{
       const result = await axios.get(`${backendURL}/api/tasks`);
