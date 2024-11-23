@@ -8,9 +8,6 @@ The Task Management app is a web application designed to help users manage their
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
 
 ## Introduction
 
@@ -31,7 +28,9 @@ The Task Management app allows users to streamline their task management process
 - CSS
 - JavaScript
 - React.js
+- Node.js
 
 ## Demo
 
-![Task Management App Screenshot](https://github.com/user-attachments/assets/34cb89b2-a14a-4149-b9c7-6ddcb8663f1e)
+[Visit My App](https://rajeev2004.github.io/TMf/)
+!(https://raw.githubusercontent.com/rajeev2004/TMf/refs/heads/main/src/assets/Screenshot%20(140).png)
