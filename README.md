@@ -37,4 +37,4 @@ The Task Management app allows users to streamline their task management process
 
 [Visit My App](https://rajeev2004.github.io/TMf/)
 
-![Screenshot](https://raw.githubusercontent.com/rajeev2004/TMf/refs/heads/main/src/assets/Screenshot%20(140).png)
+![Screenshot](https://github.com/rajeev2004/TMf/blob/main/src/assets/screenshot.png?raw=true)
